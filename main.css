@@ -9,6 +9,11 @@ h2{
     color: aliceblue;
 }
 
+.navbar{
+    background: #03001C;
+    animation: opacity 3s forwards;
+}
+
 #Div2-h2{
     /* color: #EFE1D1; */
     position: relative;
@@ -24,7 +29,7 @@ h2{
 
 .headers{
     height: 50%;
-    width: 70%;
+    width: 60%;
    /*  background-color: blue; */
     animation-duration: 4s;
     animation-delay: 6s;
@@ -65,7 +70,7 @@ h2{
 
 @keyframes moveRightToLeft {
     0% {
-     left: 100%;
+     left: 40%;
      opacity: 10%;
     }
      100% {
