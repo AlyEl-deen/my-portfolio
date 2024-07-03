@@ -2,17 +2,30 @@ h1{
     padding-top: 65px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 75px;
+    color:aliceblue;
+}
+
+h2{
     color: aliceblue;
 }
+
+#Div2-h2{
+    /* color: #EFE1D1; */
+    position: relative;
+    bottom: 50px;
+}
+
 .head{
     height: 600px;
-    background-image: url("images/head-background.jpg");
+    background-color: #331D2C;
+    background-image: url("images/space-background.jpeg");
+    animation: opacity 3s forwards;
 }
 
 .headers{
     height: 50%;
     width: 70%;
-    background-color: blue;
+   /*  background-color: blue; */
     animation-duration: 4s;
     animation-delay: 6s;
     position: relative;
@@ -22,22 +35,33 @@ h1{
 .head-2{
     height: 50%;
     width: 70%;
-    background-color: red;
-    padding-top: 130px;
+/*     background-color: red; */
     animation-duration: 4s;
     animation-delay: 6s;
+    padding-top: 130px;
     position: relative;
+    animation: moveRight 3s forwards;
     
-    animation: moveRightToRight 3s forwards;
 }
 
 
 .header-img{
 
-    height: 50%;
-    width: 50%;
-    border-radius: 100%;
+    height: 200%;
+    width: 40%;
+    border-radius: 10% 30% 50% 70%;
+    margin-left: 400px;
+    margin-top: -230px;
+    opacity: 80%;
+
 }
+
+.header-img:hover{
+    opacity: 100%;
+}
+
+
+/* Animations */
 
 @keyframes moveRightToLeft {
     0% {
@@ -45,18 +69,29 @@ h1{
      opacity: 10%;
     }
      100% {
-     left: 0;
+     left: 10%;
      opacity: 200%;
     }
         }
 
-        @keyframes moveRightToRight {
+        @keyframes moveRight {
             0% {
-             right: 100%;
-             opacity: 10%;
+                left: 0;
+                opacity: 10%;
+            }
+            100% {
+                left: calc(37.4% - 100px);
+                opacity: 200%; /* Stops 100px from the right edge */
+            }
+        }
+
+        @keyframes opacity {
+            0% {
+            /*  left: 100%; */
+             opacity: 50%;
             }
              100% {
-             right: 0;
+             /* left: 10%; */
              opacity: 100%;
             }
                 }
