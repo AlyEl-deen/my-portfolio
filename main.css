@@ -1,5 +1,6 @@
 body{
     background-image: url("images/space-background.jpeg");
+    background-attachment: fixed;
     /* animation: opacity 3s forwards; */
 }
 h1{
@@ -129,11 +130,11 @@ ul{
 
 .header-img{
 
-    height: 400px;
+    height: 450px;
     width: 370px;
     border-radius: 10% 30% 50% 70%;
     margin-left: 400px;
-    margin-top: -290px;
+    margin-top: -330px;
     opacity: 80%;
 
 }
@@ -154,7 +155,7 @@ ul{
 #About-container{
     width: 390px;
     height: 480px;
-    opacity: 70%;
+    opacity: 90%;
 }
 
 #About-container:hover{
@@ -389,15 +390,11 @@ ul{
 
 .col{
   background-color:#03001C ;
-  opacity: 70%;
+  /* opacity: 70%; */
   border: 1px solid #ccc;
   padding: 20px;
   margin: 20px;
   border-radius:  5%;
-}
-
-.col-div{
-  
 }
 
 .service-icons{
@@ -431,6 +428,15 @@ input{
   background-color:#03001C ;
 }
 
+#footerInfo{
+  position: relative;
+  margin-left: 850px;
+  margin-top: -370px;
+}
+
+#footerIcons{
+  margin-top: 60px;
+}
 
 /* Animations */
 
