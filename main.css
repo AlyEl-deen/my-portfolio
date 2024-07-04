@@ -24,7 +24,7 @@ hr{
     height: 5px;
     width: 500px;
     position: relative;
-    left: 400px;
+    left: 430px;
     background: #333;
     background-image: linear-gradient(to right, #ccc, #FEDB39, #ccc);}
 
@@ -37,6 +37,33 @@ p{
     color: aliceblue;
     margin-top: 40px;
     line-height: 30px;
+}
+
+h4{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #FEDB39;
+  position: relative;
+  margin-left: 140px;
+  padding-bottom: 20px;
+  padding-top: 80px;
+}
+
+h6{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #FEDB39;
+  padding-top: 15px;
+}
+
+h6:hover{
+  opacity: 50%;
+}
+
+label{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: aliceblue;
 }
 
 svg{
@@ -55,6 +82,11 @@ svg:hover{
    bottom: 50px;
    width: 250px;
    height: 50px;
+}
+
+ul{
+  list-style: none;
+  animation: opacity 3s forwards;
 }
 
 .navbar{
@@ -252,8 +284,14 @@ svg:hover{
 
 #Personal-info{
     height: 660px;
-    background-color: red;
-    opacity: 50%;
+   /*  background-color: red; */
+    opacity: 100%;
+}
+
+#info-suptitle{
+  position: relative;
+  animation: moveBottomToTop 2s ease-in-out forwards;
+  transition: 0.5s;
 }
 
 .image-5{
@@ -333,7 +371,66 @@ svg:hover{
     height: 480px;
     width: 390px;
     border-radius: 10% 30% 50% 70%;
+    position: relative;
+    animation: moveRightLeft 2s ease-in-out forwards;
+    transition: 0.5s;
   }
+
+#third-sec{
+  height: 800px;
+ /*   background-color: red; */
+ /*   opacity: 50%; */
+}
+
+.row{
+  padding-top: 40px;
+  margin-left: 150px;
+}
+
+.col{
+  background-color:#03001C ;
+  opacity: 70%;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px;
+  border-radius:  5%;
+}
+
+.col-div{
+  
+}
+
+.service-icons{
+  width: 70px;
+  height: 70px;
+  padding-top: 7px;
+}
+
+.service-icons:hover{
+  opacity: 50%;
+}
+
+#service-p{
+  line-height: 20px;
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+#footer{
+  height: 660px;
+   /*  background-color: red; */
+ /*    opacity: 50%; */
+}
+
+form{
+  margin-left: 140px;
+}
+
+input{
+  background-color:#03001C ;
+}
+
 
 /* Animations */
 
@@ -359,6 +456,27 @@ svg:hover{
             }
         }
 
+        @keyframes moveRightLeft {
+          0% { /* Starting position (right side) */
+            transform: translateX(100%);
+            opacity: 50%;
+          }
+          100% { /* Ending position (left side) */
+            transform: translateX(0%);
+            opacity: 100%;
+          }
+        }
+
+        @keyframes moveBottomToTop {
+          0% { /* Starting position (bottom) */
+            transform: translateY(100%);
+            opacity: 50%;
+          }
+          100% { /* Ending position (top) */
+            transform: translateY(0%);
+            opacity: 100%;
+          }
+        }
         
         @keyframes opacity {
             0% {
