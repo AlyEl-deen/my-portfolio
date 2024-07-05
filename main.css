@@ -95,6 +95,16 @@ ul{
     animation: opacity 3s forwards;
 }
 
+.navbar-brand{
+  padding-left: 125px;
+  font-weight: bold;
+}
+
+.nav-item{
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 120px;
+}
+
 #Div2-h2{
     /* color: #EFE1D1; */
     position: relative;
@@ -494,3 +504,6 @@ input{
              opacity: 100%;
             }
                 }
+
+
+/* responsive */
